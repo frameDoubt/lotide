@@ -1,4 +1,4 @@
-// FUNCTION IMPLEMENTATION
+// Function that returns element in first index position of array
 
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
@@ -7,3 +7,6 @@ const assertEqual = function(actual, expected) {
     console.log(`Assertion Failed: ${actual} !== ${expected}`);
   }
 };
+const head = function(givenArray) {
+  return givenArray[0];
+}
