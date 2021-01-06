@@ -10,7 +10,7 @@ const eqArrays = function (array1, array2) {
 
 const assertArraysEqual = function (firstArray, secondArray) {
   console.log(eqArrays(firstArray, secondArray));
-}
+};
 
 assertArraysEqual([1, 2, 3], [1, 2, 3]);
 assertArraysEqual([1, 2, 3], [1, 2, '3']);
