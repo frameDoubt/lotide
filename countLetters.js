@@ -19,4 +19,4 @@ const countLetters = function (string) {
   return results;
 };
 
-console.log(countLetters("this is so stupid"));
+console.log(countLetters("I'm just super annoyed"));
