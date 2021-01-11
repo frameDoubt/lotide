@@ -9,7 +9,11 @@ const eqArrays = function (array1, array2) {
 };
 
 const assertArraysEqual = function (firstArray, secondArray) {
-  console.log(eqArrays(firstArray, secondArray));
+  if (eqArrays(firstArray, secondArray)) {
+    console.log(`Assertion Passed: ${firstArray} === ${secondArray}`);
+  } else {
+    console.log(`Assertion Failed: ${firstArray} !== ${secondArray}`);
+  }
 };
 
 assertArraysEqual([1, 2, 3], [1, 2, 3]);
