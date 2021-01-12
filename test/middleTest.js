@@ -1,12 +1,21 @@
-const assertArraysEqual = require('../assertArraysEqual');
+const assert = require('chai').assert;
 const middle = require('../middle');
 
-let simulatedArray1 = [1, 5, 7, 9, 11];
-let simulatedArray2 = [1, 5, 7, 9, 11, 18];
-let simulatedArray3 = [1, 11];
-let simulatedArray4 = [1];
+describe("Test for middle() function", () => {
+  
+  it('returns middle index of [1, 5, 7, 9, 11] an array with an odd number of values', () => {
+    assert.deepEqual(middle([1, 5, 7, 9, 11]), [7]);
+  });
 
-assertArraysEqual(middle(simulatedArray1), [7]);
-assertArraysEqual(middle(simulatedArray2), [7, 9]);
-assertArraysEqual(middle(simulatedArray3), []);
-assertArraysEqual(middle(simulatedArray4), []);
+  it('returns middle indexes of [1, 5, 7, 9, 11, 18] an array with an even number of values', () => {
+    assert.deepEqual(middle([1, 5, 7, 9, 11, 18]), [7, 9]);
+  });
+
+  it('returns an empty array because there is no middle index for [1, 11] an array two values', () => {
+    assert.deepEqual(middle([1, 11]), []);
+  });
+
+  it('returns an empty array because one is the lonliest number', () => {
+    assert.deepEqual(middle([1]), []);
+  });
+});

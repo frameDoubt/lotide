@@ -1,6 +1,10 @@
+const assert = require('chai').assert;
 const tail = require('../tail');
-const assertEqual = require('../assertEqual');
 
-const words = ["array", "of", "words"];
-tail(words);
-assertEqual(words.length, 3);
+describe("Test for tail() function", () => {
+  
+  it('returns ["of", "words"] for ["array", "of", "words"]', () => {
+    assert.deepEqual(tail(["array", "of", "words"]), ["of", "words"]);
+  });
+
+});
