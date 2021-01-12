@@ -6,21 +6,6 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// const countOnly = function (allItems, itemsToCount) {
-//   let objCounter = {};
-//   for (let i = 1; i < allItems.length; i++) {
-//     for (allItems[i] in itemsToCount) {
-//       if (itemsToCount.hasOwnProperty(allItems[i]) && !objCounter.hasOwnProperty(allItems[i])) {
-//         objCounter[allItems[i]] = 1;
-//       } else if (itemsToCount.hasOwnProperty(allItems[i]) && objCounter.hasOwnProperty(allItems[i])) {
-//         objCounter[allItems[i]] += 1;
-//       }
-//     }
-//   }
-//   console.log(objCounter);
-//   return objCounter;
-// };
-
 const countOnly = function(allItems, itemsToCount) {
   // empty object for storing our results
   const results = {};
