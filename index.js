@@ -3,7 +3,7 @@ const tail = require('./tail');
 const middle = require('./middle');
 const assertArraysEqual = require('./assertArraysEqual');
 const assertEqual = require('./assertEqual');
-const eqArrays = require('./eqArrays');
+const eqArrays = require('./eqArrays');ea
 
 module.exports = {
   head,

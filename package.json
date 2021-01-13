@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@branwwright/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Library similar to lodash, made to develop JS programming",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
